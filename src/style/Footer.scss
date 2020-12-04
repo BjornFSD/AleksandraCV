@@ -1,0 +1,90 @@
+.footer {
+  background-color: #212026;
+  color: #ffffff;
+
+  box-sizing: border-box;
+  .mainF {
+    display: flex;
+    width: 100%;
+
+    padding: 4rem 250px;
+    &_social {
+      width: 60rem;
+
+      &-head {
+        padding: 0 0 5rem 0;
+        text-align: left;
+        font-family: Monoton;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.3rem;
+      }
+      &-text {
+        text-align: left;
+        padding-top: 3rem;
+
+        &--fb {
+          display: flex;
+
+          &-icon {
+            margin: 0;
+            padding-left: 6px;
+          }
+          &-link {
+            margin: 0;
+            padding-top: 0.8rem;
+            padding-left: 6px;
+          }
+        }
+        &--ig {
+          display: flex;
+
+          &-icon {
+            margin: 0;
+          }
+          &-link {
+            margin: 0;
+            padding-top: 0.8rem;
+          }
+        }
+        &--linkedin {
+          display: flex;
+
+          &-icon {
+            margin: 0;
+            padding-left: 6px;
+          }
+          &-link {
+            margin: 0;
+            padding-top: 0.8rem;
+            padding-left: 6px;
+          }
+        }
+        img {
+          padding-right: 10px;
+        }
+        &--a {
+          text-align: top;
+          color: white;
+          text-decoration: none;
+        }
+        &--a:hover {
+          color: lightblue;
+        }
+      }
+    }
+    &_contact {
+      &-head {
+        padding: 0 0 5rem 0;
+        font-family: Monoton;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.3rem;
+      }
+      &-form {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

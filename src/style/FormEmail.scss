@@ -1,0 +1,25 @@
+.form_control {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 3rem;
+  background-color: #212026;
+  color: #ffffff;
+  padding-left: 1rem;
+}
+.btn {
+  width: 12rem;
+  font-size: 1rem;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #3c3c3d;
+  color: lightblue;
+}
+.txt {
+  min-height: 3rem;
+}

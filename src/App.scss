@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton:wght@400;700&display=swap");
+@import "./style/Main.scss";
+@import "./style/Nav.scss";
+@import "./style/About.scss";
+@import "./style/Sections.scss";
+@import "./style/Skills.scss";
+@import "./style/Projects.scss";
+@import "./style/Footer.scss";
+@import "./style/FormEmail.scss";
+
+* {
+  margin: 0 auto;
+  clear: both;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.App {
+  text-align: center;
+}

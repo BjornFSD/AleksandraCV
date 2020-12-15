@@ -19,8 +19,8 @@
       font-weight: lighter;
       cursor: pointer;
     }
+    &-li:hover {
+      color: #e45658;
+    }
   }
-}
-.active {
-  color: #e45658;
 }

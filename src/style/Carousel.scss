@@ -1,0 +1,45 @@
+.slider {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 600px;
+  margin-bottom: 20px;
+}
+.slide {
+  display: flex;
+  justify-self: center;
+  min-width: 100%;
+
+  transition: 0.5s;
+}
+.goLeft {
+  position: relative;
+  left: -300%;
+  padding: 0 35px;
+}
+.goRight {
+  position: relative;
+  right: 215%;
+  padding: 0 35px;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+.left {
+  color: black;
+}
+.smallImages {
+  display: flex;
+  width: 10%;
+  height: 100px;
+  margin: 10px;
+  .smallSlide {
+    display: flex;
+    justify-self: left;
+    min-width: 100%;
+
+    transition: 0.5s;
+  }
+}

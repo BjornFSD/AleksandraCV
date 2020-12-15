@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel1 from "./Carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import hoverEffect from "hover-effect";
 // import one from "../../images/balloon.jpg";
 // import two from "../../images/balloon2.jpg";
@@ -37,10 +36,7 @@ function Projects() {
       <div className="temp">
         <p className="head_pro">Słynny kamień</p>
         <div className="underline2"></div>
-        <div className="karuzela">
-          <Carousel1 />
-        </div>
-
+        <Carousel1 />
         <p className="desc_pro">
           Opis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           euismod lacinia vestibulum. Duis malesuada risus sit amet turpis

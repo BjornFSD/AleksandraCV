@@ -25,7 +25,7 @@ function Projects() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             euismod lacinia vestibulum. Duis malesuada risus sit amet turpis
             accumsan, eu pellentesque justo interdum. Maecenas tincidunt libero
-            et dolor lacinia fermentum.asdsad
+            et dolor lacinia fermentum.
           </p>
         </div>
         <div className="pro_img">

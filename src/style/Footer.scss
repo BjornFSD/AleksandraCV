@@ -88,3 +88,522 @@
     }
   }
 }
+.stopka {
+  background-color: black;
+  padding: 5px 0;
+}
+@media only screen and (max-width: 1600px) {
+  .footer {
+    background-color: #212026;
+    color: #ffffff;
+
+    box-sizing: border-box;
+    .mainF {
+      display: flex;
+      width: 100%;
+
+      padding: 20px 150px;
+      &_social {
+        width: 600px;
+        padding-right: 100px;
+        &-head {
+          padding: 0 0 18px 0;
+          text-align: left;
+          font-family: Monoton;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 42px;
+        }
+        &-text {
+          text-align: left;
+          padding-top: 3rem;
+
+          &--fb {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0.8rem;
+              padding-left: 6px;
+            }
+          }
+          &--ig {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0.8rem;
+            }
+          }
+          &--linkedin {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0.8rem;
+              padding-left: 6px;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+          &--a {
+            text-align: top;
+            color: white;
+            text-decoration: none;
+          }
+          &--a:hover {
+            color: lightblue;
+          }
+        }
+      }
+      &_contact {
+        &-head {
+          padding: 0 0 18px 0;
+          font-family: Monoton;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 42px;
+        }
+        &-form {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .stopka {
+    background-color: black;
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .footer {
+    background-color: #212026;
+    color: #ffffff;
+
+    box-sizing: border-box;
+    .mainF {
+      display: flex;
+      width: 100%;
+
+      padding: 20px 50px;
+      &_social {
+        width: 600px;
+        padding-right: 50px;
+        &-head {
+          padding: 0 0 18px 0;
+          text-align: left;
+          font-family: Monoton;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 42px;
+        }
+        &-text {
+          text-align: left;
+          padding-top: 3rem;
+
+          &--fb {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0.8rem;
+              padding-left: 6px;
+            }
+          }
+          &--ig {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0.8rem;
+            }
+          }
+          &--linkedin {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0.8rem;
+              padding-left: 6px;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+          &--a {
+            text-align: top;
+            color: white;
+            text-decoration: none;
+          }
+          &--a:hover {
+            color: lightblue;
+          }
+        }
+      }
+      &_contact {
+        &-head {
+          padding: 0 0 18px 0;
+          font-family: Monoton;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 42px;
+        }
+        &-form {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .stopka {
+    background-color: black;
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    .mainF {
+      display: flex;
+      flex-flow: column-reverse wrap;
+      align-items: center;
+      padding: 20px 10px;
+      &_social {
+        width: 100%;
+        padding: 0;
+        &-head {
+          padding: 12px 0;
+          text-align: center;
+          font-size: 32px;
+        }
+        &-text {
+          text-align: left;
+          padding-top: 0;
+          padding-left: 150px;
+          &--fb {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+              img {
+                width: 38px;
+              }
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0;
+              padding-left: 6px;
+            }
+          }
+          &--ig {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 2px;
+              img {
+                width: 46px;
+              }
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0;
+            }
+          }
+          &--linkedin {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+              img {
+                width: 38px;
+              }
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0;
+              padding-left: 6px;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+          &--a {
+            font-size: 14px;
+            text-align: top;
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      &_contact {
+        &-head {
+          padding: 0 0 12px 0;
+          font-size: 32px;
+        }
+        &-form {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .stopka {
+    background-color: black;
+    font-size: 8px;
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    .mainF {
+      display: flex;
+      flex-flow: column-reverse wrap;
+      align-items: center;
+      padding: 20px 10px;
+      &_social {
+        width: 500px;
+
+        &-head {
+          padding: 16px 0 16px 0;
+          text-align: center;
+          font-size: 28px;
+        }
+        &-text {
+          text-align: left;
+          padding-top: 0;
+          padding-left: 50px;
+        }
+      }
+      &_contact {
+        &-head {
+          padding: 0 0 16px 0;
+          font-size: 28px;
+        }
+        &-form {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .stopka {
+    background-color: black;
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    .mainF {
+      display: flex;
+      flex-flow: column-reverse wrap;
+      align-items: center;
+      padding: 20px 10px;
+      &_social {
+        width: 400px;
+
+        &-head {
+          padding: 12px 0;
+          text-align: center;
+          font-size: 28px;
+        }
+        &-text {
+          text-align: left;
+          padding-top: 0;
+          padding-left: 5px;
+          &--fb {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+              img {
+                width: 38px;
+              }
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0;
+              padding-left: 6px;
+            }
+          }
+          &--ig {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 2px;
+              img {
+                width: 46px;
+              }
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0;
+            }
+          }
+          &--linkedin {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+              img {
+                width: 38px;
+              }
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0;
+              padding-left: 6px;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+          &--a {
+            font-size: 14px;
+            text-align: top;
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      &_contact {
+        &-head {
+          padding: 0 0 12px 0;
+          font-size: 22px;
+        }
+        &-form {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .stopka {
+    background-color: black;
+    font-size: 8px;
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .footer {
+    .mainF {
+      display: flex;
+      flex-flow: column-reverse wrap;
+      align-items: center;
+      padding: 20px 10px;
+      &_social {
+        width: 300px;
+
+        &-head {
+          padding: 8px 0;
+          text-align: center;
+          font-size: 22px;
+        }
+        &-text {
+          text-align: left;
+          padding-top: 0;
+          padding-left: 5px;
+          &--fb {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+              img {
+                width: 34px;
+              }
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0;
+              padding-left: 6px;
+            }
+          }
+          &--ig {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 2px;
+              img {
+                width: 42px;
+              }
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0;
+            }
+          }
+          &--linkedin {
+            display: flex;
+
+            &-icon {
+              margin: 0;
+              padding-left: 6px;
+              img {
+                width: 34px;
+              }
+            }
+            &-link {
+              margin: 0;
+              padding-top: 0;
+              padding-left: 6px;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+          &--a {
+            font-size: 12px;
+            text-align: top;
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      &_contact {
+        &-head {
+          padding: 0 0 12px 0;
+          font-size: 22px;
+        }
+        &-form {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .stopka {
+    background-color: black;
+    font-size: 8px;
+    padding: 5px 0;
+  }
+}

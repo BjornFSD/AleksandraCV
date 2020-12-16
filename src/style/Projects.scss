@@ -1,20 +1,25 @@
 .pro {
-  text-align: left;
+  display: flex;
+  flex-flow: column wrap;
   padding: 5rem 0;
-  margin: 0;
-  float: left;
-  width: 100%;
-  text-align: left;
-
+  margin: 0 60px;
   &_header {
+    align-self: flex-start;
+    margin: 0;
     font-size: 2.5rem;
   }
   &_template1 {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
     .pro_desc {
+      display: flex;
+      align-self: flex-start;
+      flex-flow: column wrap;
       background-color: #dedede;
       border-radius: 9px;
       padding: 2rem 3rem 5rem 3rem;
-      width: 50rem;
+      width: 880px;
       margin: 0;
       box-shadow: 0 200px 0 #dedede;
       .pro_desc-top {
@@ -27,23 +32,21 @@
       }
     }
     .pro_img {
-      text-align: right;
-      padding-right: 4rem;
+      align-self: flex-end;
+      padding-right: 0;
+      margin: 0;
     }
-  }
-  .temp {
   }
 }
 .underline {
   border-bottom: 3px solid rgba(172, 56, 56, 1);
   padding-bottom: 10px;
   margin-bottom: 10px;
-  width: 5rem;
+
+  width: 80px;
 }
 .temp {
   margin-top: 4rem;
-  .carousel {
-  }
   .head_pro {
     font-size: 3rem;
     text-align: center;
@@ -57,5 +60,381 @@
   }
   .desc_pro {
     text-align: justify;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .pro {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5rem 0;
+    margin: 0;
+    &_header {
+      font-size: 34px;
+      margin: 0;
+    }
+    &_template1 {
+      display: flex;
+      flex-flow: column wrap;
+      margin: 0;
+      .pro_desc {
+        display: flex;
+        align-self: flex-start;
+        flex-flow: column wrap;
+        border-radius: 9px;
+        padding: 60px;
+        width: 850px;
+        margin: 0;
+        box-shadow: 0 200px 0 #dedede;
+        .pro_desc-top {
+          align-self: flex-start;
+          color: #ffffff;
+          font-size: 28px;
+          padding-bottom: 22px;
+          margin: 0;
+        }
+        .pro_desc-bot {
+          text-align: justify;
+          font-size: 16px;
+        }
+      }
+      .pro_img {
+        align-self: flex-end;
+        padding-right: 0;
+        margin: 0;
+        img {
+          width: 800px;
+        }
+      }
+    }
+  }
+  .underline {
+    width: 68px;
+  }
+  .temp {
+    margin-top: 4rem;
+    .head_pro {
+      font-size: 40px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    .underline2 {
+      width: 6rem;
+    }
+    .desc_pro {
+      font-size: 16px;
+      text-align: justify;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .pro {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5rem 0;
+    margin: 0;
+    &_header {
+      font-size: 34px;
+      margin: 0;
+    }
+    &_template1 {
+      display: flex;
+      flex-flow: column wrap;
+      margin: 0;
+      .pro_desc {
+        display: flex;
+        align-self: flex-start;
+        flex-flow: column wrap;
+        border-radius: 9px;
+        padding: 2rem;
+        width: 700px;
+        margin: 0;
+        box-shadow: 0 150px 0 #dedede;
+        .pro_desc-top {
+          align-self: flex-start;
+          color: #ffffff;
+          font-size: 28px;
+          padding-bottom: 2rem;
+          margin: 0;
+        }
+        .pro_desc-bot {
+          text-align: justify;
+        }
+      }
+      .pro_img {
+        align-self: flex-end;
+        padding-right: 0;
+        margin: 0;
+        img {
+          width: 650px;
+        }
+      }
+    }
+  }
+  .underline {
+    width: 68px;
+  }
+  .temp {
+    margin-top: 4rem;
+    .head_pro {
+      font-size: 3rem;
+      text-align: center;
+      font-weight: lighter;
+    }
+    .underline2 {
+      width: 6rem;
+    }
+    .desc_pro {
+      text-align: justify;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pro {
+    padding: 5rem 0;
+    margin: 0;
+
+    &_header {
+      align-self: center;
+      margin: 0;
+      font-size: 32px;
+    }
+    &_template1 {
+      align-self: center;
+      .pro_desc {
+        background-color: #dedede;
+        border-radius: 9px;
+        padding: 40px 30px;
+        width: 700px;
+        margin: 0;
+        box-shadow: 0 150px 0 #dedede;
+        .pro_desc-top {
+          color: #ffffff;
+          font-size: 24px;
+          padding-bottom: 20px;
+        }
+        .pro_desc-bot {
+          font-size: 14px;
+          text-align: justify;
+        }
+      }
+      .pro_img {
+        align-self: center;
+        padding-right: 0;
+        img {
+          width: 600px;
+        }
+      }
+    }
+  }
+  .underline {
+    align-self: center;
+    margin-bottom: 16px;
+    width: 70px;
+  }
+  .temp {
+    margin-top: 4rem;
+    .head_pro {
+      font-size: 32px;
+      margin-top: 30px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    .underline2 {
+      border-bottom: 3px solid rgba(172, 56, 56, 1);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      width: 80px;
+    }
+    .desc_pro {
+      padding: 0 30px;
+      text-align: justify;
+      font-size: 14px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pro {
+    text-align: left;
+    padding: 5rem 0;
+    margin: 0;
+    float: left;
+
+    &_header {
+      font-size: 32px;
+    }
+    &_template1 {
+      .pro_desc {
+        background-color: #dedede;
+        border-radius: 9px;
+        padding: 22px 30px;
+        width: 500px;
+        margin: 0;
+        box-shadow: 0 200px 0 #dedede;
+        .pro_desc-top {
+          color: #ffffff;
+          font-size: 2rem;
+          padding-bottom: 2rem;
+        }
+        .pro_desc-bot {
+          text-align: justify;
+        }
+      }
+      .pro_img {
+        text-align: center;
+        padding-right: 0;
+        img {
+          width: 450px;
+        }
+      }
+    }
+  }
+  .underline {
+    align-self: center;
+    margin-bottom: 16px;
+    width: 68px;
+  }
+  .temp {
+    margin-top: 4rem;
+    .head_pro {
+      font-size: 32px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    .underline2 {
+      border-bottom: 3px solid rgba(172, 56, 56, 1);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      width: 6rem;
+    }
+    .desc_pro {
+      padding: 0 30px;
+      text-align: justify;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .pro {
+    text-align: left;
+    padding: 5rem 0;
+    margin: 0;
+    float: left;
+
+    &_header {
+      font-size: 28px;
+    }
+    &_template1 {
+      .pro_desc {
+        background-color: #dedede;
+        border-radius: 9px;
+        padding: 22px 30px;
+        width: 400px;
+        margin: 0;
+        box-shadow: 0 100px 0 #dedede;
+        .pro_desc-top {
+          color: #ffffff;
+          font-size: 22px;
+          padding-bottom: 14px;
+        }
+        .pro_desc-bot {
+          font-size: 10px;
+          text-align: justify;
+        }
+      }
+      .pro_img {
+        text-align: center;
+        padding-right: 0;
+        img {
+          width: 320px;
+        }
+      }
+    }
+  }
+  .underline {
+    align-self: center;
+    margin-bottom: 16px;
+    width: 44px;
+  }
+  .temp {
+    margin-top: 4rem;
+    .head_pro {
+      font-size: 28px;
+      margin-top: 30px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    .underline2 {
+      border-bottom: 3px solid rgba(172, 56, 56, 1);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      width: 40px;
+    }
+    .desc_pro {
+      padding: 0 30px;
+      text-align: justify;
+      font-size: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .pro {
+    text-align: left;
+    padding: 5rem 0;
+    margin: 0;
+    float: left;
+
+    &_header {
+      font-size: 22px;
+    }
+    &_template1 {
+      .pro_desc {
+        background-color: #dedede;
+        border-radius: 9px;
+        padding: 22px 30px;
+        width: 300px;
+        margin: 0;
+        box-shadow: 0 100px 0 #dedede;
+        .pro_desc-top {
+          color: #ffffff;
+          font-size: 18px;
+          padding-bottom: 14px;
+        }
+        .pro_desc-bot {
+          font-size: 10px;
+          text-align: justify;
+        }
+      }
+      .pro_img {
+        text-align: center;
+        padding-right: 0;
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
+  .underline {
+    align-self: center;
+    margin-bottom: 16px;
+    width: 44px;
+  }
+  .temp {
+    margin-top: 4rem;
+    .head_pro {
+      font-size: 22px;
+      margin-top: 30px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    .underline2 {
+      border-bottom: 3px solid rgba(172, 56, 56, 1);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      width: 40px;
+    }
+    .desc_pro {
+      padding: 0 30px;
+      text-align: justify;
+      font-size: 10px;
+    }
   }
 }

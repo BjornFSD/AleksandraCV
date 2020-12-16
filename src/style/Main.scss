@@ -25,3 +25,51 @@
   text-shadow: -1px 0 rgba(228, 86, 88, 0.5), 0 1px rgba(228, 86, 88, 0.5),
     1px 0 rgba(228, 86, 88, 0.5), 0 -1px rgba(228, 86, 88, 0.5);
 }
+@media only screen and (max-width: 768px) {
+  .all {
+    position: relative;
+  }
+  .profile {
+    margin-top: 120px;
+    margin-bottom: 28px;
+    width: 35%;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .all {
+    position: relative;
+  }
+  .profile {
+    margin-top: 120px;
+    margin-bottom: 28px;
+    width: 50%;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .all {
+    position: relative;
+  }
+  .profile {
+    margin-top: 150px;
+    margin-bottom: 28px;
+    width: 30%;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}

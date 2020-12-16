@@ -4,11 +4,13 @@ function About() {
   return (
     <div ref={About} className="about">
       <div className="about_left">
+        <p className="about_left-header">About Me</p>
+        <div className="about_left_underline"></div>
         <img className="about_left-img" src="../img/profiloweS.png" alt="" />
       </div>
       <div className="about_right">
         <p className="about_right-header">About Me</p>
-        <div className="underline"></div>
+        <div className="about_right_underline"></div>
         <p className="about_right-desc">
           My name is Aleksandra Klińska, I’m a Freelancer Developer based in
           Gdańsk, Poland. I’m very passionate and dedicated to my work. My name
@@ -35,7 +37,11 @@ function About() {
             Skype: Bombola97
           </div>
         </div>
-        <div className="download">Download CV</div>
+        <div className="download">
+          <a href="./files/test.pdf" className="download_text" download>
+            Download CV
+          </a>
+        </div>
       </div>
     </div>
   );

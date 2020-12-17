@@ -4,12 +4,17 @@
   box-shadow: 250px 0 0 #212026, -250px 0 0 #212026;
   color: #bdbcc2;
   margin: 0;
+  padding: 0 150px;
   &_left {
+    display: flex;
+    flex-flow: column wrap;
     padding: 58px 0;
     margin: 0 0 0 60px;
     width: 450px;
 
     &-header {
+      align-self: flex-start;
+      margin: 0;
       font-size: 42px;
     }
     &-desc {
@@ -38,6 +43,7 @@
     box-shadow: 250px 0 0 #212026, -250px 0 0 #212026;
     color: #bdbcc2;
     margin: 0;
+    padding: 0;
     &_left {
       padding: 58px 0;
       margin: 0 0 0 10px;
@@ -112,6 +118,8 @@
       width: 700px;
       margin: 0;
       &-header {
+        align-self: center;
+        margin: 0;
         font-size: 32px;
       }
       &-desc {

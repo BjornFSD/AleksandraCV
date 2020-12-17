@@ -41,7 +41,7 @@ function Nav() {
           className="nav_ul-li"
           onClick={() => {
             window.scrollTo({
-              top: document.querySelector(".pro").offsetTop,
+              top: document.querySelector(".projects").offsetTop,
               behavior: "smooth",
             });
           }}

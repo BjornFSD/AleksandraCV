@@ -76,6 +76,15 @@ function Carousel1() {
           );
         })}
       </div>
+      <p className="desc_pro">
+        Opis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        euismod lacinia vestibulum. Duis malesuada risus sit amet turpis
+        accumsan, eu pellentesque justo interdum. Maecenas tincidunt libero et
+        dolor lacinia fermentum.asdsad Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Nunc euismod lacinia vestibulum. Duis malesuada risus
+        sit amet turpis accumsan, eu pellentesque justo interdum. Maecenas
+        tincidunt libero et dolor lacinia fermentum.asdsad{" "}
+      </p>
     </div>
   );
 }

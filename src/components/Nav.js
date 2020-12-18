@@ -3,6 +3,9 @@ import React from "react";
 function Nav() {
   return (
     <div className="nav">
+      <div className="nav_name">
+        <p>Aleksandra Klińska</p>
+      </div>
       <ul className="nav_ul">
         <li
           className="nav_ul-li"
@@ -13,7 +16,7 @@ function Nav() {
             });
           }}
         >
-          Home
+          home
         </li>
         <li
           className="nav_ul-li"
@@ -24,7 +27,7 @@ function Nav() {
             });
           }}
         >
-          About Me
+          about me
         </li>
         <li
           className="nav_ul-li"
@@ -35,7 +38,7 @@ function Nav() {
             });
           }}
         >
-          Skills & Programms
+          skills & programms
         </li>
         <li
           className="nav_ul-li"
@@ -46,7 +49,7 @@ function Nav() {
             });
           }}
         >
-          Projects
+          projects
         </li>
         <li
           className="nav_ul-li"
@@ -57,7 +60,7 @@ function Nav() {
             });
           }}
         >
-          Contact
+          contact
         </li>
       </ul>
     </div>

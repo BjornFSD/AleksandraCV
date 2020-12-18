@@ -11,7 +11,7 @@ function RowColumn() {
     boxShadow: " -350px 0 0 #dfdfdf",
   };
 
-  let boxArr = [
+  const boxArr = [
     { src: "./img/t1.jpg", id: 0 },
     { src: "./img/t2.jpg", id: 1 },
     { src: "./img/t3.jpg", id: 2 },
@@ -43,12 +43,18 @@ function RowColumn() {
     // console.log(`nieparzyste ${even}`);
     // console.log(ss.item);
     return !(odd === null) ? (
-      <div className="columns_box-img" key={index} style={stylesOdd}>
-        {odd}
+      <div className="columns_box-titleOdd" key={index}>
+        <p>Something</p>
+        <div className="columns_box-img" style={stylesOdd}>
+          {odd}
+        </div>
       </div>
     ) : (
-      <div className="columns_box-img" key={index} style={stylesEven}>
-        {even}
+      <div className="columns_box-titleEven" key={index}>
+        <p>Something</p>
+        <div className="columns_box-img" style={stylesEven}>
+          {even}
+        </div>
       </div>
     );
   });

@@ -50,3 +50,28 @@
     min-height: 3rem;
   }
 }
+@media only screen and (max-width: 375px) {
+  .form_control {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 38px;
+    background-color: #212026;
+    color: #ffffff;
+    padding-left: 1rem;
+  }
+  .btn {
+    width: 90px;
+    font-size: 8px;
+    border: 1px solid #ffffff93;
+    border-radius: 10px;
+    padding-left: 0;
+  }
+  .btn:hover {
+    cursor: pointer;
+    background-color: #3c3c3d;
+    color: lightblue;
+  }
+  .txt {
+    min-height: 3rem;
+  }
+}

@@ -122,13 +122,29 @@
 }
 @media only screen and (max-width: 320px) {
   .nav {
-    font-size: 8px;
+    font-size: 7px;
     &_name {
       padding: 0 0.3rem;
-      font-size: 10px;
+      font-size: 8px;
     }
     &_ul {
-      height: 40px;
+      height: 30px;
+      &-li {
+        padding: 0 0.2rem;
+        line-height: 5vh;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 300px) {
+  .nav {
+    font-size: 7px;
+    &_name {
+      padding: 0 0.3rem;
+      font-size: 8px;
+    }
+    &_ul {
+      height: 30px;
       &-li {
         padding: 0 0.2rem;
         line-height: 5vh;

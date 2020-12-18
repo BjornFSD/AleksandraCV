@@ -207,7 +207,50 @@
     }
   }
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 375px) {
+  .blocks {
+    &_header {
+      font-size: 28px;
+    }
+    &_box {
+      flex-direction: column;
+      width: 350px;
+      margin: 10px 0px;
+      &-element {
+        display: flex;
+        flex-flow: column wrap;
+        width: 80%;
+        &--image {
+          img {
+            width: 100%;
+          }
+        }
+        &--name {
+          font-size: 14px;
+          display: flex;
+          padding: 10px 30px;
+          margin: 0;
+        }
+        &--desc {
+          font-size: 10px;
+          display: flex;
+          margin: 0;
+          padding: 0px 30px 10px 30px;
+        }
+      }
+    }
+    &_description {
+      text-align: justify;
+      font-size: 12px;
+      padding: 0px 40px;
+    }
+    .underline {
+      width: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
   .blocks {
     &_header {
       font-size: 28px;

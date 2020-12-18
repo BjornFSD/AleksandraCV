@@ -61,6 +61,17 @@
     font-size: 22px;
     text-decoration: none;
     color: white;
+    border: 3px solid white;
+    transition: color 1s ease-in-out;
+
+    &:hover {
+      background: white;
+      border: 3px solid #ac3838;
+      color: #ac3838;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 1 s ease-in-out;
+    }
   }
 }
 @media only screen and (max-width: 1600px) {

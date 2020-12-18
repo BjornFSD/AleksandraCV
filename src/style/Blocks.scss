@@ -7,10 +7,245 @@
     font-weight: lighter;
   }
   &_box {
+    display: flex;
     width: 1400px;
-    height: 500px;
+    margin: 20px 0px;
+    &-element {
+      display: flex;
+      flex-flow: column wrap;
+      width: 33%;
+      justify-content: flex-start;
+      &--image {
+        img {
+          width: 100%;
+        }
+      }
+      &--name {
+        font-size: 14px;
+        display: flex;
+        padding: 10px 30px;
+        margin: 0;
+      }
+      &--desc {
+        font-size: 10px;
+        display: flex;
+        margin: 0;
+        padding: 0px 30px;
+        color: grey;
+      }
+    }
+  }
+  &_description {
+    text-align: justify;
   }
   .underline {
     width: 50px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .blocks {
+    &_header {
+      font-size: 40px;
+    }
+    &_box {
+      width: 1200px;
+      margin: 20px 0px;
+      &-element {
+        display: flex;
+        flex-flow: column wrap;
+        width: 33%;
+        justify-content: flex-start;
+        &--image {
+          img {
+            width: 100%;
+          }
+        }
+        &--name {
+          font-size: 14px;
+          display: flex;
+          padding: 10px 30px;
+          margin: 0;
+        }
+        &--desc {
+          font-size: 10px;
+          display: flex;
+          margin: 0;
+          padding: 0px 30px;
+        }
+      }
+    }
+    &_description {
+      text-align: justify;
+    }
+    .underline {
+      width: 50px;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .blocks {
+    &_header {
+      font-size: 40px;
+    }
+    &_box {
+      width: 800px;
+      margin: 20px 0px;
+      &-element {
+        display: flex;
+        flex-flow: column wrap;
+        width: 33%;
+        justify-content: flex-start;
+        &--image {
+          img {
+            width: 100%;
+          }
+        }
+        &--name {
+          font-size: 14px;
+          display: flex;
+          padding: 10px 30px;
+          margin: 0;
+        }
+        &--desc {
+          font-size: 10px;
+          display: flex;
+          margin: 0;
+          padding: 0px 30px;
+        }
+      }
+    }
+    &_description {
+      text-align: justify;
+      font-size: 12px;
+    }
+    .underline {
+      width: 50px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .blocks {
+    &_header {
+      font-size: 28px;
+    }
+    &_box {
+      width: 600px;
+      margin: 10px 0px;
+      &-element {
+        display: flex;
+        flex-flow: column wrap;
+        width: 33%;
+        justify-content: flex-start;
+        &--image {
+          img {
+            width: 100%;
+          }
+        }
+        &--name {
+          font-size: 14px;
+          display: flex;
+          padding: 10px 30px;
+          margin: 0;
+        }
+        &--desc {
+          font-size: 10px;
+          display: flex;
+          margin: 0;
+          padding: 0px 30px;
+        }
+      }
+    }
+    &_description {
+      text-align: justify;
+      font-size: 12px;
+      padding: 0px 30px;
+    }
+    .underline {
+      width: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .blocks {
+    &_header {
+      font-size: 28px;
+    }
+    &_box {
+      flex-direction: column;
+      width: 400px;
+      margin: 10px 0px;
+      &-element {
+        display: flex;
+        flex-flow: column wrap;
+        width: 80%;
+        &--image {
+          img {
+            width: 100%;
+          }
+        }
+        &--name {
+          font-size: 14px;
+          display: flex;
+          padding: 10px 30px;
+          margin: 0;
+        }
+        &--desc {
+          font-size: 10px;
+          display: flex;
+          margin: 0;
+          padding: 0px 30px 10px 30px;
+        }
+      }
+    }
+    &_description {
+      text-align: justify;
+      font-size: 12px;
+      padding: 0px 40px;
+    }
+    .underline {
+      width: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 340px) {
+  .blocks {
+    &_header {
+      font-size: 28px;
+    }
+    &_box {
+      flex-direction: column;
+      width: 300px;
+      margin: 10px 0px;
+      &-element {
+        display: flex;
+        flex-flow: column wrap;
+        width: 80%;
+        &--image {
+          img {
+            width: 100%;
+          }
+        }
+        &--name {
+          font-size: 14px;
+          display: flex;
+          padding: 10px 30px;
+          margin: 0;
+        }
+        &--desc {
+          font-size: 10px;
+          display: flex;
+          margin: 0;
+          padding: 0px 30px 10px 30px;
+        }
+      }
+    }
+    &_description {
+      text-align: justify;
+      font-size: 12px;
+      padding: 0px 40px;
+    }
+    .underline {
+      width: 40px;
+    }
   }
 }

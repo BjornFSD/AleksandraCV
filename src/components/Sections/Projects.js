@@ -2,6 +2,7 @@ import React from "react";
 import Carousel1 from "./Carousel";
 import RowColumn from "./RowColumn";
 import Blocks from "./Blocks";
+import OtherProjects from "./OtherProjects"
 
 function Projects() {
   return (
@@ -34,6 +35,9 @@ function Projects() {
       </div>
       <div className="template4">
         <Blocks />
+      </div>
+      <div className="template5">
+        <OtherProjects />
       </div>
     </div>
   );

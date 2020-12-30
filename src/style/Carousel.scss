@@ -34,16 +34,19 @@ button {
 .left {
   color: black;
 }
+.smallImage {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
 .smallImages {
   display: flex;
   width: 10%;
-  height: 100px;
+  height: 80px;
   margin: 10px;
   .smallSlide {
     display: flex;
-    justify-self: left;
     min-width: 100%;
-
     transition: 0.5s;
   }
 }

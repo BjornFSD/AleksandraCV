@@ -8,13 +8,15 @@
   }
   &_box {
     display: flex;
+    flex-wrap: wrap;
     width: 1400px;
     margin: 20px 0px;
     &-element {
       display: flex;
       flex-flow: column wrap;
-      width: 33%;
+      flex-basis: 33%;
       justify-content: flex-start;
+      padding-bottom: 30px;
       &--image {
         img {
           width: 100%;
@@ -37,6 +39,7 @@
   }
   &_description {
     text-align: justify;
+    padding: 8px 90px;
   }
   .underline {
     width: 50px;

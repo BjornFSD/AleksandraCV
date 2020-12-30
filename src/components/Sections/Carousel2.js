@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ImgComp from "./ImgComp";
 
-function Carousel1() {
+function Carousel2() {
   let sliderArr = [
-    { name: <ImgComp src="../img/BlueHouse/1.jpg" />, id: 0 },
-    { name: <ImgComp src="../img/BlueHouse/2.jpg" />, id: 1 },
-    { name: <ImgComp src="../img/BlueHouse/3.jpg" />, id: 2 },
-    { name: <ImgComp src="../img/BlueHouse/4.jpg" />, id: 3 },
-    { name: <ImgComp src="../img/BlueHouse/5.jpg" />, id: 4 },
-    { name: <ImgComp src="../img/BlueHouse/6.jpg" />, id: 5 },
-    { name: <ImgComp src="../img/BlueHouse/7.jpg" />, id: 6 },
-    { name: <ImgComp src="../img/BlueHouse/8.jpg" />, id: 7 },
+    { name: <ImgComp src="../img/Stolik/1.jpg" />, id: 0 },
+    { name: <ImgComp src="../img/Stolik/2.jpg" />, id: 1 },
+    { name: <ImgComp src="../img/Stolik/3.jpg" />, id: 2 },
+    { name: <ImgComp src="../img/Stolik/4.jpg" />, id: 3 },
+    { name: <ImgComp src="../img/Stolik/5.jpg" />, id: 4 },
   ];
   const [x, setX] = useState(0);
   const goLeft = () => {
@@ -95,4 +92,4 @@ function Carousel1() {
   );
 }
 
-export default Carousel1;
+export default Carousel2;

@@ -1,0 +1,276 @@
+.Others_First {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding-top: 20px;
+  &_header {
+    margin: 0;
+    font-size: 28px;
+    font-weight: lighter;
+    align-self: flex-start;
+    padding-left: 30px;
+  }
+  .underline {
+    width: 50px;
+    margin: 0;
+    align-self: flex-start;
+    padding-bottom: 2px;
+    margin-left: 30px;
+  }
+  &_description {
+    margin: 0;
+    align-self: flex-start;
+
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 30px;
+  }
+  &_box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    &-element {
+      margin: 0px 15px 10px 15px;
+      display: flex;
+      width: 22%;
+      height: 240px;
+      img {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+  //   &:hover {
+  //     transition: 1s ease;
+  //     background-color: #777;
+  //     opacity: 0.4;
+  //   }
+}
+@media only screen and (max-width: 1600px) {
+  .Others_First {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding-top: 20px;
+    &_header {
+      margin: 0;
+      font-size: 28px;
+      font-weight: lighter;
+      align-self: flex-start;
+      padding-left: 0;
+    }
+    .underline {
+      width: 50px;
+      margin: 0;
+      align-self: flex-start;
+      padding-bottom: 2px;
+      margin-left: 0;
+    }
+    &_description {
+      margin: 0;
+      align-self: flex-start;
+
+      font-size: 14px;
+      text-align: left;
+      padding: 10px 0;
+    }
+    &_box {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      &-element {
+        margin: 0px 5px 10px 5px;
+        display: flex;
+        width: 23%;
+        height: 220px;
+        img {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Others_First {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding-top: 20px;
+    &_header {
+      margin: 0;
+      font-size: 28px;
+      font-weight: lighter;
+      align-self: flex-start;
+      padding-left: 0;
+    }
+    .underline {
+      width: 50px;
+      margin: 0;
+      align-self: flex-start;
+      padding-bottom: 2px;
+      margin-left: 0;
+    }
+    &_description {
+      margin: 0;
+      align-self: flex-start;
+
+      font-size: 13px;
+      text-align: justify;
+      padding: 10px 0;
+    }
+    &_box {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      &-element {
+        margin: 0px 5px 10px 5px;
+        display: flex;
+        width: 32%;
+        height: 220px;
+        img {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Others_First {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding-top: 20px;
+    &_header {
+      margin: 0;
+      font-size: 24px;
+      font-weight: lighter;
+      align-self: flex-start;
+      padding-left: 30px;
+    }
+    .underline {
+      width: 50px;
+      margin: 0;
+      align-self: flex-start;
+      padding-bottom: 2px;
+      margin-left: 30px;
+    }
+    &_description {
+      margin: 0;
+      align-self: flex-start;
+
+      font-size: 12px;
+      text-align: justify;
+      padding: 10px 30px;
+    }
+    &_box {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin: 0 0 0 10px;
+      &-element {
+        margin: 5px 5px 10px 5px;
+        display: flex;
+        width: 48%;
+        height: 270px;
+        img {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Others_First {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding-top: 20px;
+    &_header {
+      margin: 0;
+      font-size: 24px;
+      font-weight: lighter;
+      align-self: flex-start;
+      padding-left: 30px;
+    }
+    .underline {
+      width: 50px;
+      margin: 0;
+      align-self: flex-start;
+      padding-bottom: 2px;
+      margin-left: 30px;
+    }
+    &_description {
+      margin: 0;
+      align-self: flex-start;
+
+      font-size: 10px;
+      text-align: justify;
+      padding: 10px 30px;
+    }
+    &_box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      &-element {
+        margin: 0px 5px 10px 5px;
+        display: flex;
+        width: 90%;
+
+        height: 240px;
+        img {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .Others_First {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding-top: 20px;
+    &_header {
+      margin: 0;
+      font-size: 22px;
+      font-weight: lighter;
+      align-self: flex-start;
+      padding-left: 30px;
+    }
+    .underline {
+      width: 50px;
+      margin: 0;
+      align-self: flex-start;
+      padding-bottom: 2px;
+      margin-left: 30px;
+    }
+    &_description {
+      margin: 0;
+      align-self: flex-start;
+
+      font-size: 10px;
+      text-align: justify;
+      padding: 10px 30px;
+    }
+    &_box {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      &-element {
+        margin: 0px 5px 10px 5px;
+        display: flex;
+        width: 90%;
+        height: 180px;
+        img {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

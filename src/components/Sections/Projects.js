@@ -2,7 +2,8 @@ import React from "react";
 import Carousel1 from "./Carousel";
 import RowColumn from "./RowColumn";
 import Blocks from "./Blocks";
-import OtherProjects from "./OtherProjects"
+import OtherProjects from "./OtherProjects";
+import Carousel2 from "./Carousel2";
 
 function Projects() {
   return (
@@ -10,23 +11,9 @@ function Projects() {
       <div className="template1">
         <div className="template1_header">My Projects</div>
         <div className="underline"></div>
-        <div className="template1_box">
-          <div className="template1_box-desc">
-            <p className="template1_box-desc--top">Sleeping-room </p>
-            <p className="template1_box-desc--bot">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              euismod lacinia vestibulum. Duis malesuada risus sit amet turpis
-              accumsan, eu pellentesque justo interdum. Maecenas tincidunt
-              libero et dolor lacinia fermentum.
-            </p>
-          </div>
-          <div className="template1_box-img">
-            <img src="../img/pro1.png" alt=""></img>
-          </div>
-        </div>
       </div>
       <div className="temp">
-        <p className="head_pro">Słynny kamień</p>
+        <p className="head_pro">Blue House</p>
         <div className="underline2"></div>
         <Carousel1 />
       </div>
@@ -35,6 +22,11 @@ function Projects() {
       </div>
       <div className="template4">
         <Blocks />
+      </div>
+      <div className="temp">
+        <p className="head_pro">Słynny kamień</p>
+        <div className="underline2"></div>
+        <Carousel2 />
       </div>
       <div className="template5">
         <OtherProjects />

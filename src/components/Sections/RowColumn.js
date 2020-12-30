@@ -12,14 +12,16 @@ function RowColumn() {
   };
   // to show titles set title with id
   const boxArr = [
-    { src: "./img/t1.jpg", id: 0, title: "Something 1" },
-    { src: "./img/t2.jpg", id: 1, title: "2" },
-    { src: "./img/t3.jpg", id: 2, title: "Something 3" },
-    { src: "./img/t1.jpg", id: 3, title: "4" },
-    { src: "./img/t2.jpg", id: 4, title: "Something 5" },
-    { src: "./img/t3.jpg", id: 5, title: "6" },
-    { src: "./img/t1.jpg", id: 6, title: "Something 7" },
-    { src: "./img/t2.jpg", id: 7, title: "8" },
+    { src: "../img/karuzela/1.jpg", id: 0, title: "Something 1" },
+    { src: "../img/karuzela/2.jpg", id: 1, title: "2" },
+    { src: "../img/karuzela/3.jpg", id: 2, title: "Something 3" },
+    { src: "../img/karuzela/4.jpg", id: 3, title: "4" },
+    { src: "../img/karuzela/5.jpg", id: 4, title: "Something 5" },
+    { src: "../img/karuzela/5a.jpg", id: 5, title: "6" },
+    { src: "../img/karuzela/6.jpg", id: 6, title: "Something 7" },
+    { src: "../img/karuzela/7.jpg", id: 7, title: "8" },
+    { src: "../img/karuzela/8.jpg", id: 8, title: "Something 9" },
+    { src: "../img/karuzela/9.jpg", id: 9, title: "9" },
   ];
 
   const splitArr = boxArr.reduce(function (box, key, index) {
@@ -61,7 +63,7 @@ function RowColumn() {
   });
   return (
     <div className="columns">
-      <div className="columns_title">Two Columns</div>
+      <div className="columns_title">mini LAB</div>
       <div className="underline"></div>
       <div className="columns_desc">description here smileW</div>
       <div className="columns_box">{showImages}</div>

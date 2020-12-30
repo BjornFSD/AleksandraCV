@@ -45,6 +45,11 @@
     }
   }
 }
+.template5 {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+}
 .underline {
   border-bottom: 3px solid rgba(172, 56, 56, 1);
   padding-bottom: 10px;

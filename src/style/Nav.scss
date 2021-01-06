@@ -2,7 +2,6 @@
   position: fixed;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   background: white;
@@ -17,16 +16,31 @@
     display: flex;
     justify-self: flex-start;
     margin: 0;
-    padding: 0 3rem;
+    padding: 0 1rem 0 3rem;
     font-size: 26px;
   }
-  &_ul {
+  &_language {
+    display: flex;
     margin: 0;
+    justify-self: flex-start;
+    &-item {
+      display: flex;
+      width: 20px;
+      margin-right: 5px;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &_ul {
+    margin-right: 0;
     height: 60px;
     list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-self: flex-end;
     align-items: center;
 
     &-li {
@@ -44,7 +58,7 @@
   .nav {
     font-size: 18px;
     &_name {
-      padding: 0 3rem;
+      padding: 0 1rem 0 3rem;
       font-size: 24px;
     }
     &_ul {

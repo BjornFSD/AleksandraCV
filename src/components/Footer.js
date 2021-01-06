@@ -1,7 +1,7 @@
 import React from "react";
 import FormEmail from "./FormEmail";
 
-function Footer() {
+function Footer({ language, setlanguage }) {
   return (
     <div className="footer">
       <div className="mainF">
@@ -17,7 +17,7 @@ function Footer() {
                   className="mainF_social-text--a"
                   href="https://www.facebook.com/aleksandra.klinska.50/"
                 >
-                  facebook.com/aleksandra.klinska.50
+                  Aleksandra Klińska
                 </a>
               </div>
             </div>
@@ -30,7 +30,7 @@ function Footer() {
                   className="mainF_social-text--a"
                   href="https://www.instagram.com/k___aleksandra/"
                 >
-                  instagram.com/k___aleksandra/
+                  k___aleksandra
                 </a>
               </div>
             </div>
@@ -43,7 +43,7 @@ function Footer() {
                   className="mainF_social-text--a"
                   href="https://www.linkedin.com/in/aleksandra-kli%C5%84ska-730283163/?trk=public-profile-join-page"
                 >
-                  linkedin.com/in/aleksandra-klinska
+                  Aleksandra Klińska
                 </a>
               </div>
             </div>

@@ -11,22 +11,16 @@
     display: flex;
     flex-flow: column wrap;
     padding: 60px 0 0 0;
-
-    width: 450px;
-
+    width: 100%;
     &-header {
       margin: 0;
       font-size: 42px;
-    }
-    &-desc {
-      padding-top: 12px;
-      text-align: left;
     }
     .underline {
       align-self: center;
       border-bottom: 2px solid rgba(172, 56, 56, 1);
       padding-bottom: 10px;
-      margin-bottom: 10px;
+      margin: 5px 0;
       width: 132px;
     }
   }
@@ -48,16 +42,10 @@
     margin: 0;
     padding: 0;
     &_left {
-      padding: 58px 0;
+      padding: 45px 0 0 0;
       margin: 0 0 0 10px;
-      width: 500px;
-      text-align: left;
       &-header {
         font-size: 34px;
-      }
-      &-desc {
-        font-size: 16px;
-        padding-top: 12px;
       }
       .underline {
         border-bottom: 2px solid rgba(172, 56, 56, 1);
@@ -67,7 +55,7 @@
       }
     }
     &_right {
-      padding: 4rem 0;
+      padding: 1rem 0;
       img {
         padding: 16px 22px;
         width: 124px;
@@ -83,10 +71,8 @@
     color: #bdbcc2;
     margin: 0;
     &_left {
-      padding: 58px 0;
+      padding: 45px 0 0 0;
       margin: 0 0 0 10px;
-      width: 400px;
-      text-align: left;
       &-header {
         font-size: 30px;
       }
@@ -101,7 +87,7 @@
       }
     }
     &_right {
-      padding: 4rem 0;
+      padding: 1rem 0;
       img {
         padding: 16px 22px;
         width: 124px;
@@ -117,9 +103,8 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      padding: 40px 0;
-      width: 700px;
-      margin: 0;
+      padding: 20px 0 0 0;
+
       &-header {
         align-self: center;
         margin: 0;
@@ -134,7 +119,7 @@
       }
     }
     &_right {
-      padding: 0 0 50px 0;
+      padding: 0 0 12px 0;
       img {
         padding: 16px 15px;
         width: 100px;
@@ -180,9 +165,8 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      padding: 40px 0;
-      width: 400px;
-      margin: 0;
+      padding: 20px 0 0 0;
+      width: 100%;
       &-header {
         font-size: 26px;
       }
@@ -195,7 +179,7 @@
       }
     }
     &_right {
-      padding: 0 0 50px 0;
+      padding: 0 0 10px 0;
       img {
         padding: 16px 5px;
         width: 60px;
@@ -212,9 +196,8 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      padding: 54px 0;
-      width: 300px;
-      margin: 0;
+      padding: 16px 0 0 0;
+      width: 100%;
       &-header {
         font-size: 22px;
       }
@@ -227,7 +210,7 @@
       }
     }
     &_right {
-      padding: 0 0 50px 0;
+      padding: 0 0 10px 0;
       img {
         padding: 16px 5px;
         width: 60px;

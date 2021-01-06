@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ImgComp from "./ImgComp";
 
-function Carousel2() {
+function Carousel2({ language, setlanguage }) {
   let sliderArr = [
     { name: <ImgComp src="../img/Stolik/1.jpg" />, id: 0 },
     { name: <ImgComp src="../img/Stolik/2.jpg" />, id: 1 },
@@ -79,15 +79,6 @@ function Carousel2() {
           })}
         </div>
       </div>
-      <p className="desc_pro">
-        Opis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        euismod lacinia vestibulum. Duis malesuada risus sit amet turpis
-        accumsan, eu pellentesque justo interdum. Maecenas tincidunt libero et
-        dolor lacinia fermentum.asdsad Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nunc euismod lacinia vestibulum. Duis malesuada risus
-        sit amet turpis accumsan, eu pellentesque justo interdum. Maecenas
-        tincidunt libero et dolor lacinia fermentum.asdsad{" "}
-      </p>
     </div>
   );
 }

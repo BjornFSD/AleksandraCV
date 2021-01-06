@@ -1,10 +1,12 @@
 import React from "react";
 
-function Skills() {
+function Skills({ language, setlanguage }) {
   return (
     <div className="skills">
       <div className="skills_left">
-        <p className="skills_left-header"> Skills & Programms</p>
+        <p className="skills_left-header">
+          {language ? "Używam Programów" : "Works in Programms"}
+        </p>
         <div className="underline"></div>
       </div>
       <div className="skills_right">

@@ -6,6 +6,10 @@
     font-size: 40px;
     font-weight: lighter;
   }
+  &_ul > li {
+    list-style: none;
+    line-height: 20px;
+  }
   &_box {
     display: flex;
     flex-wrap: wrap;
@@ -23,10 +27,12 @@
         }
       }
       &--name {
-        font-size: 14px;
+        font-size: 16px;
         display: flex;
-        padding: 10px 30px;
+        padding: 10px 0;
+        align-self: center;
         margin: 0;
+        font-variant: small-caps;
       }
       &--desc {
         font-size: 10px;
@@ -57,7 +63,7 @@
         display: flex;
         flex-flow: column wrap;
         width: 33%;
-        justify-content: flex-start;
+        justify-content: center;
         &--image {
           img {
             width: 100%;
@@ -66,14 +72,14 @@
         &--name {
           font-size: 14px;
           display: flex;
-          padding: 10px 30px;
+          justify-self: center;
           margin: 0;
         }
         &--desc {
           font-size: 10px;
           display: flex;
           margin: 0;
-          padding: 0px 30px;
+          justify-self: center;
         }
       }
     }

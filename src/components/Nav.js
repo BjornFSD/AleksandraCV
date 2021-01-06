@@ -1,12 +1,17 @@
 import React from "react";
 
-function Nav({ language, setlanguage, swap }) {
+function Nav({ language, setlanguage, swap, PL, ENG }) {
   return (
     <div className="nav">
       <div className="nav_name">
         <p>Aleksandra Klińska</p>
-        <div className="nav_name-language" onClick={swap}>
-          Zmień język
+      </div>
+      <div className="nav_language">
+        <div className="nav_language-item" onClick={PL}>
+          <img src="./img/PL.png" alt="" />
+        </div>
+        <div className="nav_language-item" onClick={ENG}>
+          <img src="./img/UK.png" alt="" />
         </div>
       </div>
       <ul className="nav_ul">
@@ -19,7 +24,7 @@ function Nav({ language, setlanguage, swap }) {
             });
           }}
         >
-          home
+          {language ? "Home" : "Home"}
         </li>
         <li
           className="nav_ul-li"
@@ -30,7 +35,7 @@ function Nav({ language, setlanguage, swap }) {
             });
           }}
         >
-          about me
+          {language ? "O Mnie" : "About Me"}
         </li>
         <li
           className="nav_ul-li"
@@ -41,7 +46,7 @@ function Nav({ language, setlanguage, swap }) {
             });
           }}
         >
-          skills & programms
+          {language ? "Programy" : "Programms"}
         </li>
         <li
           className="nav_ul-li"
@@ -52,7 +57,7 @@ function Nav({ language, setlanguage, swap }) {
             });
           }}
         >
-          projects
+          {language ? "Projekty" : "Projects"}
         </li>
         <li
           className="nav_ul-li"
@@ -63,7 +68,7 @@ function Nav({ language, setlanguage, swap }) {
             });
           }}
         >
-          contact
+          {language ? "Kontakt" : "Contact"}
         </li>
       </ul>
     </div>

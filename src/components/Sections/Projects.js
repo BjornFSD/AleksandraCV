@@ -5,7 +5,7 @@ import Blocks from "./Blocks";
 import OtherProjects from "./OtherProjects";
 import Carousel2 from "./Carousel2";
 
-function Projects() {
+function Projects({ language, setlanguage }) {
   return (
     <div className="projects">
       <div className="template1">
@@ -15,21 +15,23 @@ function Projects() {
       <div className="temp">
         <p className="head_pro">Blue House</p>
         <div className="underline2"></div>
-        <Carousel1 />
+        <Carousel1 language={language} setlanguage={setlanguage} />
       </div>
       <div className="template3">
-        <RowColumn />
+        <RowColumn language={language} setlanguage={setlanguage} />
       </div>
       <div className="template4">
-        <Blocks />
+        <Blocks language={language} setlanguage={setlanguage} />
       </div>
       <div className="temp">
-        <p className="head_pro">Słynny kamień</p>
+        <p className="head_pro">
+          {language ? "Stolik kawowy" : "Coffee table"}
+        </p>
         <div className="underline2"></div>
-        <Carousel2 />
+        <Carousel2 language={language} setlanguage={setlanguage} />
       </div>
       <div className="template5">
-        <OtherProjects />
+        <OtherProjects language={language} setlanguage={setlanguage} />
       </div>
     </div>
   );

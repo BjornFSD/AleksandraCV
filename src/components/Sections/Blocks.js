@@ -1,49 +1,84 @@
 import React from "react";
 
-function Blocks() {
+function Blocks({ language, setlanguage }) {
   const Arr = [
-    { src: "./img/Zukowo/1.jpg", name: "Bedroom", desc: "You can sleep there" },
-    { src: "./img/Zukowo/2.jpg", name: "Salon", desc: "You can rest there" },
+    { src: "./img/Zukowo/1.jpg", name: "Salon", nameEng: "Salon" },
+    { src: "./img/Zukowo/3.jpg", name: "Kuchnia", nameEng: "Kitchen" },
+    { src: "./img/Zukowo/4.jpg", name: "Kuchnia", nameEng: "Kitchen" },
     {
-      src: "./img/Zukowo/3.jpg",
-      name: "Bathroom",
-      desc: "You can take a bath there",
+      src: "./img/Zukowo/5.jpg",
+      name: "Łazienka nr.1",
+      nameEng: "Bathroom No.1",
     },
-    { src: "./img/Zukowo/4.jpg", name: "Bedroom", desc: "You can sleep there" },
-    { src: "./img/Zukowo/5.jpg", name: "Salon", desc: "You can rest there" },
     {
       src: "./img/Zukowo/6.jpg",
-      name: "Bathroom",
-      desc: "You can take a bath there",
-    },
-    { src: "./img/Zukowo/7.jpg", name: "Bedroom", desc: "You can sleep there" },
-    { src: "./img/Zukowo/8.jpg", name: "Salon", desc: "You can rest there" },
-    {
-      src: "./img/Zukowo/9.jpg",
-      name: "Bathroom",
-      desc: "You can take a bath there",
+      name: "Łazienka nr.1",
+      nameEng: "Bathroom No.1",
     },
     {
-      src: "./img/Zukowo/10.jpg",
-      name: "Bedroom",
-      desc: "You can sleep there",
+      src: "./img/Zukowo/7.jpg",
+      name: "Łazienka nr.1",
+      nameEng: "Bathroom No.1",
     },
-    { src: "./img/Zukowo/11.jpg", name: "Salon", desc: "You can rest there" },
     {
-      src: "./img/Zukowo/12.jpg",
-      name: "Bathroom",
-      desc: "You can take a bath there",
+      src: "./img/Zukowo/8.jpg",
+      name: "Łazienka nr.2",
+      nameEng: "Bathroom No.2",
+    },
+    {
+      src: "./img/Zukowo/2.jpg",
+      name: "Sypialnia nr.1",
+      nameEng: "Bedroom No.1",
     },
     {
       src: "./img/Zukowo/13.jpg",
-      name: "Bedroom",
-      desc: "You can sleep there",
+      name: "Sypialnia nr.2",
+      nameEng: "Bedroom No.2",
     },
-    { src: "./img/Zukowo/14.jpg", name: "Salon", desc: "You can rest there" },
     {
       src: "./img/Zukowo/15.jpg",
-      name: "Bathroom",
-      desc: "You can take a bath there",
+      name: "Sypialnia nr.2",
+      nameEng: "Bedroom No.2",
+    },
+    {
+      src: "./img/Zukowo/14.jpg",
+      name: "Sypialnia nr.2",
+      nameEng: "Bedroom No.2",
+    },
+    {
+      src: "./img/Zukowo/12.jpg",
+      name: "Sypialnia nr.2",
+      nameEng: "Bedroom No.2",
+    },
+    {
+      src: "./img/Zukowo/10.jpg",
+      name: "Sypialnia nr.3",
+      nameEng: "Bedroom No.3",
+    },
+    {
+      src: "./img/Zukowo/11.jpg",
+      name: "Sypialnia nr.3",
+      nameEng: "Bedroom No.3",
+    },
+    {
+      src: "./img/Zukowo/9.jpg",
+      name: "Sypialnia nr.3",
+      nameEng: "Bedroom No.3",
+    },
+    {
+      src: "./img/Zukowo/16.jpg",
+      name: "Rzut mieszkania",
+      nameEng: "Technical section",
+    },
+    {
+      src: "./img/Zukowo/17.jpg",
+      name: "Kuchnia",
+      nameEng: "Technical section",
+    },
+    {
+      src: "./img/Zukowo/18.jpg",
+      name: "Łazienka No.1",
+      nameEng: "Technical section",
     },
   ];
 
@@ -53,27 +88,35 @@ function Blocks() {
         <div className="blocks_box-element--image">
           <img alt="" src={item.src} />
         </div>
-
-        <div className="blocks_box-element--name">{item.name}</div>
-        <div className="blocks_box-element--desc">{item.desc}</div>
+        <div className="blocks_box-element--name">
+          {language ? item.name : item.nameEng}
+        </div>
       </div>
     );
   });
 
   return (
     <div className="blocks">
-      <div className="blocks_header">Żukowo</div>
+      <div className="blocks_header">
+        {language ? "Realizacja" : "Implementation"}
+      </div>
       <div className="underline"></div>
-      <p className="blocks_description">
-        {" "}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod
-        lacinia vestibulum. Duis malesuada risus sit amet turpis accumsan, eu
-        pellentesque justo interdum. Maecenas tincidunt libero et dolor lacinia
-        fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        euismod lacinia vestibulum. Duis malesuada risus sit amet turpis
-        accumsan, eu pellentesque justo interdum. Maecenas tincidunt libero et
-        dolor lacinia fermentum.
-      </p>
+      <ul className="blocks_ul">
+        <li className="blocks_ul-li">
+          <p>{language ? "Lokaizacja" : "Location"}: Żukowo</p>
+        </li>
+        <li className="blocks_ul-li">
+          <p> {language ? "Powierzchnia" : "Area"}: 86m2</p>
+        </li>
+        <li className="blocks_ul-li">
+          <p>
+            {language
+              ? "Przeznaczenie: Projekt mieszkania dla rodziny 4-osobowej"
+              : "Destiny: Design of an apartment for a four-person family"}
+          </p>
+        </li>
+      </ul>
+      <p className="blocks_description"></p>
       <div className="blocks_box">{displayBlocks}</div>
     </div>
   );

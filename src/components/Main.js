@@ -10,10 +10,21 @@ function Main() {
     setlanguage(!language);
     console.log(language);
   };
-
+  const PL = () => {
+    setlanguage(true);
+  };
+  const ENG = () => {
+    setlanguage(false);
+  };
   return (
     <div className="all">
-      <Nav language={language} setlanguage={setlanguage} swap={swap} />
+      <Nav
+        language={language}
+        setlanguage={setlanguage}
+        swap={swap}
+        PL={PL}
+        ENG={ENG}
+      />
 
       <div className="main">
         <img className="profile" src="../img/profilePhoto.png" alt="" />

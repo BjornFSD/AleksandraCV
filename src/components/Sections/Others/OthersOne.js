@@ -1,7 +1,11 @@
 import React from "react";
 
-function OthersOne() {
-  const Library = ["./img/Czytelnia/1.jpg", "./img/Czytelnia/2.jpg"];
+function OthersOne({ language, setlanguage }) {
+  const Library = [
+    "./img/Czytelnia/1.jpg",
+    "./img/Czytelnia/2.jpg",
+    "./img/Czytelnia/3r.jpg",
+  ];
   const Kitchen1 = [
     "./img/Kuchnia1/1.jpg",
     "./img/Kuchnia1/2.jpg",
@@ -77,14 +81,16 @@ function OthersOne() {
       <div className="Others_First">
         <div className="Others_First_header">Czytelnia</div>
         <div className="underline"></div>
-        <p className="Others_First_description">
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod
-          lacinia vestibulum. Duis malesuada risus sit amet turpis accumsan, eu
-          pellentesque justo interdum. Maecenas tincidunt libero et dolor
-          lacinia fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit.
-        </p>
+        {language ? (
+          <p className="Others_First_description">
+            Założeniem projektu było zagospodarowanie przestrzeni publicznej w
+            formie czytelni. Jest to miejsce specjalistyczne, gdzie znajdują się
+            książki, audiobooki, publikacje i albumy, wyłącznie o tematyce
+          </p>
+        ) : (
+          <p className="Others_First_description">Angielski</p>
+        )}
+
         <div className="Others_First_box">{displayLibrary}</div>
       </div>
       <div className="Others_First">

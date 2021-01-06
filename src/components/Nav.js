@@ -1,10 +1,13 @@
 import React from "react";
 
-function Nav() {
+function Nav({ language, setlanguage, swap }) {
   return (
     <div className="nav">
       <div className="nav_name">
         <p>Aleksandra Klińska</p>
+        <div className="nav_name-language" onClick={swap}>
+          Zmień język
+        </div>
       </div>
       <ul className="nav_ul">
         <li

@@ -1,22 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Sections from "./Sections";
 
-function main() {
+function Main() {
+  const [language, setlanguage] = useState(true);
+
+  const swap = () => {
+    setlanguage(!language);
+    console.log(language);
+  };
+
   return (
     <div className="all">
-      <Nav />
+      <Nav language={language} setlanguage={setlanguage} swap={swap} />
+
       <div className="main">
         <img className="profile" src="../img/profilePhoto.png" alt="" />
-        <p className="title">Aleksandra Klińska</p>
-        <p className="subtitle">Architect & Designer</p>
-      </div>
-      <Sections />
 
-      <Footer />
+        <p className="title">Aleksandra Klińska</p>
+        <p className="subtitle">Interior Designer</p>
+      </div>
+
+      <Sections language={language} setlanguage={setlanguage} />
+
+      <Footer language={language} setlanguage={setlanguage} />
     </div>
   );
 }
 
-export default main;
+export default Main;

@@ -1,5 +1,7 @@
 .skills {
   display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   background-color: #212026;
   box-shadow: 250px 0 0 #212026, -250px 0 0 #212026;
   color: #bdbcc2;
@@ -8,12 +10,11 @@
   &_left {
     display: flex;
     flex-flow: column wrap;
-    padding: 58px 0;
-    margin: 0 0 0 60px;
+    padding: 60px 0 0 0;
+
     width: 450px;
 
     &-header {
-      align-self: flex-start;
       margin: 0;
       font-size: 42px;
     }
@@ -22,6 +23,7 @@
       text-align: left;
     }
     .underline {
+      align-self: center;
       border-bottom: 2px solid rgba(172, 56, 56, 1);
       padding-bottom: 10px;
       margin-bottom: 10px;
@@ -29,7 +31,8 @@
     }
   }
   &_right {
-    padding: 4rem 0 4rem 5rem;
+    align-items: center;
+    padding: 30px 0;
     img {
       padding: 16px 30px;
       width: 150px;

@@ -11,6 +11,7 @@ function Carousel1() {
     { name: <ImgComp src="../img/BlueHouse/6.jpg" />, id: 5 },
     { name: <ImgComp src="../img/BlueHouse/7.jpg" />, id: 6 },
     { name: <ImgComp src="../img/BlueHouse/8.jpg" />, id: 7 },
+    { name: <ImgComp src="../img/BlueHouse/9.jpg" />, id: 8 },
   ];
   const [x, setX] = useState(0);
   const goLeft = () => {
@@ -83,13 +84,26 @@ function Carousel1() {
         </div>
       </div>
       <p className="desc_pro">
-        Opis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        euismod lacinia vestibulum. Duis malesuada risus sit amet turpis
-        accumsan, eu pellentesque justo interdum. Maecenas tincidunt libero et
-        dolor lacinia fermentum.asdsad Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nunc euismod lacinia vestibulum. Duis malesuada risus
-        sit amet turpis accumsan, eu pellentesque justo interdum. Maecenas
-        tincidunt libero et dolor lacinia fermentum.asdsad{" "}
+        The design assumption was to create a residential house for a young
+        couple. It has: kitchen, work space, bedroom (antresol), bathroom and
+        small wardrobe. The whole house and its equipment is monochrome. It is
+        blue. The exception is a wooden table with two chairs. They are to refer
+        to the family home, memories and childhood. The entire facade is glazed
+        so that as much light as possible gets inside. The facade has one more
+        task. Interior and exterior integration - the user goes outside with the
+        functions of the house. It is to be an intuitive desire to be close to
+        nature. Equipment also has a purpose. When no resident uses any of the
+        zones - they are closed or hidden. When he wants to use them - he opens
+        them. The kitchen has an additional worktop hidden in the wall, and in
+        the apparent wardrobe and place of relaxation is hidden in the closet to
+        work on the computer.. When the user wants to work, he moves the chair
+        from the kitchen to the second room and works there. It is also possible
+        to continue it elsewhere. Just open the terrace door and go from the
+        work area to the mini terrace. The house has a single-fall roof. It is
+        cheaper and easier to make. You can also collect rainwater and use it
+        for work, e.g. in the garden (axonometry). A large number of windows
+        will allow home insulation. By respecting nature, the project uses less
+        material. One piece of furniture has several functions.
       </p>
     </div>
   );

@@ -5,14 +5,7 @@ function Skills() {
     <div className="skills">
       <div className="skills_left">
         <p className="skills_left-header"> Skills & Programms</p>
-
         <div className="underline"></div>
-        <p className="skills_left-desc">
-          {" "}
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-          ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.........
-        </p>
       </div>
       <div className="skills_right">
         <img src="../img/1.png" alt="" />

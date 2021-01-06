@@ -3,12 +3,12 @@ import About from "./Sections/About";
 import Projects from "./Sections/Projects";
 import Skills from "./Sections/Skills";
 
-function Sections() {
+function Sections({ language, setlanguage }) {
   return (
     <div className="sections">
-      <About />
-      <Skills />
-      <Projects />
+      <About language={language} setlanguage={setlanguage} />
+      <Skills language={language} setlanguage={setlanguage} />
+      <Projects language={language} setlanguage={setlanguage} />
     </div>
   );
 }

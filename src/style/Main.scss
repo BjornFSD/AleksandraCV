@@ -1,34 +1,45 @@
-.all {
-  position: relative;
-}
 .main {
   width: 100%;
   height: 100vh;
-  background-image: url("../bgImage.png");
+  background-image: url("../bgOla2.jpg");
   // background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .profile {
-  margin-top: 15vh;
+  margin-top: 20vh;
   margin-bottom: 5vh;
+  margin-left: -40vw;
 }
 .title {
-  color: white;
-  font-size: 4rem;
-  text-shadow: -1px 0 rgba(255, 255, 255, 0.5), 0 1px rgba(255, 255, 255, 0.5),
-    1px 0 rgba(255, 255, 255, 0.5), 0 -1px rgba(255, 255, 255, 0.5);
+  margin-left: -40vw;
+  color: black;
+  font-size: 3.5rem;
+  //   text-shadow: -1px 0 rgba(255, 255, 255, 0.5), 0 1px rgba(255, 255, 255, 0.5),
+  //     1px 0 rgba(255, 255, 255, 0.5), 0 -1px rgba(255, 255, 255, 0.5);
+  font-weight: lighter;
 }
 .subtitle {
-  font-size: 2.5rem;
-  color: #e45658;
-  text-shadow: -1px 0 rgba(228, 86, 88, 0.5), 0 1px rgba(228, 86, 88, 0.5),
-    1px 0 rgba(228, 86, 88, 0.5), 0 -1px rgba(228, 86, 88, 0.5);
+  margin-left: -40vw;
+  font-size: 2.2rem;
+  color: #862526;
+  text-shadow: -1px 0 rgba(134, 37, 38, 0.5), 0 1px rgba(134, 37, 38, 0.5),
+    1px 0 rgba(134, 37, 38, 0.5), 0 -1px rgba(134, 37, 38, 0.5);
 }
-@media only screen and (max-width: 768px) {
-  .all {
-    position: relative;
+@media only screen and (max-width: 1600px) {
+  .profile {
+    margin-top: 120px;
+    margin-bottom: 28px;
+    width: 20%;
   }
+  .title {
+    font-size: 38px;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .profile {
     margin-top: 120px;
     margin-bottom: 28px;
@@ -41,30 +52,83 @@
     font-size: 22px;
   }
 }
-@media only screen and (max-width: 600px) {
-  .all {
-    position: relative;
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    background-position-x: -250px;
+    background-size: cover;
   }
   .profile {
-    margin-top: 120px;
+    margin-top: 180px;
+    margin-bottom: 28px;
+    margin-left: -50vw;
+    width: 35%;
+  }
+  .title {
+    font-size: 28px;
+    margin-left: -50vw;
+  }
+  .subtitle {
+    font-size: 22px;
+    margin-left: -50vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../bgImage22.jpg");
+    background-position-x: 0;
+    background-size: cover;
+  }
+  .profile {
+    margin-top: 50px;
+    margin-bottom: 28px;
+    margin-left: 0;
+    width: 40%;
+  }
+  .title {
+    font-size: 24px;
+    margin-left: 0;
+  }
+  .subtitle {
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../bgImage22.jpg");
+    background-position-x: 0;
+    background-size: cover;
+  }
+  .profile {
+    margin-top: 40px;
     margin-bottom: 28px;
     width: 50%;
   }
   .title {
-    font-size: 28px;
-  }
-  .subtitle {
     font-size: 22px;
   }
+  .subtitle {
+    font-size: 18px;
+  }
 }
-@media only screen and (max-width: 375px) {
-  .all {
-    position: relative;
+@media only screen and (max-width: 320px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../bgImage22.jpg");
+    background-position-x: 0;
+    background-size: cover;
   }
   .profile {
-    margin-top: 150px;
+    margin-top: 65px;
     margin-bottom: 28px;
-    width: 30%;
+    width: 50%;
   }
   .title {
     font-size: 22px;

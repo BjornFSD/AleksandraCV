@@ -9,9 +9,6 @@ function Carousel1({ language, setlanguage }) {
     { name: <ImgComp src="../img/BlueHouse/4.jpg" />, id: 3 },
     { name: <ImgComp src="../img/BlueHouse/5.jpg" />, id: 4 },
     { name: <ImgComp src="../img/BlueHouse/6.jpg" />, id: 5 },
-    { name: <ImgComp src="../img/BlueHouse/7.jpg" />, id: 6 },
-    { name: <ImgComp src="../img/BlueHouse/8.jpg" />, id: 7 },
-    { name: <ImgComp src="../img/BlueHouse/9.jpg" />, id: 8 },
   ];
   const [x, setX] = useState(0);
   const goLeft = () => {
@@ -62,13 +59,6 @@ function Carousel1({ language, setlanguage }) {
         <div className="smallImages">
           {sliderArr.map((item, index) => {
             const transX = item.id * -100;
-
-            // const changeX = () => {
-            //   console.log(document.querySelectorAll(`#img`)[2]);
-
-            //   //.style.transform = `translateX(-100%)`;
-            // };
-            // for (let v = 0; v < sliderArr.length; v++);
             const changeId = () => {
               for (let n = 0; n < sliderArr.length; n++) {
                 takeId[n].style.transform = `translateX(${transX}%)`;

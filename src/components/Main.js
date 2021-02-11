@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Sections from "./Sections";
+import ScrollToTop from "./ScrollToTop";
 
 function Main() {
   const [language, setlanguage] = useState(true);
+  const content = useRef(null);
 
   const swap = () => {
     setlanguage(!language);
@@ -18,6 +20,7 @@ function Main() {
   };
   return (
     <div className="all">
+      <ScrollToTop content={content} />
       <Nav
         language={language}
         setlanguage={setlanguage}

@@ -86,7 +86,9 @@ function OthersOne({ language, setlanguage }) {
   return (
     <div className="Others">
       <div className="Others_First">
-        <div className="Others_First_header">Czytelnia</div>
+        <div className="Others_First_header">
+          {language ? "Czytelnia" : "Reading room"}
+        </div>
         <div className="underline"></div>
         {language ? (
           <p className="Others_First_description">
@@ -125,13 +127,19 @@ function OthersOne({ language, setlanguage }) {
         <div className="Others_First_box">{displayLibrary}</div>
       </div>
       <div className="Others_First">
-        <div className="Others_First_header">Kuchnia 1</div>
+        <div className="Others_First_header">
+          {" "}
+          {language ? "Kuchnia nr.1" : "Kitchen No.1"}
+        </div>
         <div className="underline"></div>
         <p className="Others_First_description"></p>
         <div className="Others_First_box">{displayKitchen1}</div>
       </div>
       <div className="Others_First">
-        <div className="Others_First_header">Kuchnia 2</div>
+        <div className="Others_First_header">
+          {" "}
+          {language ? "Kuchnia nr.2" : "Kitchen No.2"}
+        </div>
         <div className="underline"></div>
         <p className="Others_First_description"></p>
         <div className="Others_First_box">{displayKitchen2}</div>

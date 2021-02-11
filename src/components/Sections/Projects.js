@@ -13,7 +13,12 @@ function Projects({ language, setlanguage }) {
         <div className="underline"></div>
       </div>
       <div className="temp">
-        <p className="head_pro">Blue House</p>
+        <p className="head_pro">
+          {" "}
+          {language
+            ? "Projekt konkursowy - Microhome 2020"
+            : "Competition project - Microhome 2020"}
+        </p>
         <div className="underline2"></div>
         <Carousel1 language={language} setlanguage={setlanguage} />
       </div>
@@ -25,7 +30,7 @@ function Projects({ language, setlanguage }) {
       </div>
       <div className="temp">
         <p className="head_pro">
-          {language ? "Stolik kawowy" : "Coffee table"}
+          {language ? "Projekt stolika kawowego" : "Coffee table design"}
         </p>
         <div className="underline2"></div>
         <Carousel2 language={language} setlanguage={setlanguage} />

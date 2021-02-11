@@ -1,6 +1,6 @@
 import React from "react";
 
-function About({ language, setlanguage }) {
+function About({ language }) {
   return (
     <div ref={About} className="about">
       <div className="about_left">
@@ -13,15 +13,15 @@ function About({ language, setlanguage }) {
         <div className="about_right_underline"></div>
         <p className="about_right-desc">
           {language
-            ? "Nazywam się Aleksandra Klińska, jestem Freelancerką projektowania wnętrz. Aktualnie mieszkam w Gdańsku, Polsce. Jestem pasjonatką i oddaję całą siebe w swojej pracy."
-            : " My name is Aleksandra Klińska, I’m a Freelancer Interior Designer. I'm currently based inGdańsk, Poland. I’m very passionate and dedicated to my work. I was crazy about projecting home and other buildings when i was 10."}
+            ? "Nazywam się Aleksandra Klińska, jestem studentką studiów magisterskich na Akademii Sztuk Pięknych w Gdańsku na Wydziale Architektury i wzornictwa. Moją pasją jest poszukiwanie form, barw, struktur, które wspólnie tworzą unikatową przestrzeń. Lubię zdobywać doświadczenie w sztuce. Z zamiłowania maluję i tworze zdjęcia analogowoe."
+            : "My name is Aleksandra Klińska, I am a Master's student at the Academy of Fine Arts in Gdansk at the Faculty of Architecture and Design. My passion is searching for forms, colors, structures, which together create a unique space. I like to gain experience in art. I am passionate about painting and creating analogue photographs."}{" "}
         </p>
         <div className="about_right-box">
           <div className="about_right-box_a1">
             {language ? "Imię i Nazwisko" : "Name"}
             : Aleksandra Klińska
             <br />
-            {language ? "Telefon" : "Name"}: 798 742 945
+            {language ? "Telefon" : "Phone"}: 798 742 945
             <br />
             E-mail: aleksandraklinska20@gmail.com
             <br />
@@ -40,7 +40,11 @@ function About({ language, setlanguage }) {
           </div>
         </div>
         <div className="download">
-          <a href="./files/test.pdf" className="download_text" download>
+          <a
+            href="./files/Aleksandra_Klińska_CV.pdf"
+            className="download_text"
+            download
+          >
             {language ? "Pobierz CV" : "Download CV"}
           </a>
         </div>

@@ -58,13 +58,6 @@ function Carousel2({ language, setlanguage }) {
         <div className="smallImages">
           {sliderArr.map((item, index) => {
             const transX = item.id * -100;
-
-            // const changeX = () => {
-            //   console.log(document.querySelectorAll(`#img`)[2]);
-
-            //   //.style.transform = `translateX(-100%)`;
-            // };
-            // for (let v = 0; v < sliderArr.length; v++);
             const changeId = () => {
               for (let n = 0; n < sliderArr.length; n++) {
                 takeId[n].style.transform = `translateX(${transX}%)`;
@@ -79,6 +72,11 @@ function Carousel2({ language, setlanguage }) {
           })}
         </div>
       </div>
+      <p className="desc_pro">
+        {language
+          ? "Zaprojektowany przeze mnie stolik kawowy powstał z założeniem wkomponowania go do wybranej przestrzeni mieszkalnej. Jest nią salon w XVII-wiecznym katalońskim domu w Hiszpanii. Cały obiekt jest wykonany z kamienia naturalnego o różnej strukturze. Założeniem projektowym stolika była przede wszystkim forma i funkcja. Ze względu na kubaturę wybranego pomieszczenia zdecydowałam się na zaprojektowanie dwóch stolików, które po zespoleniu tworzą wspólną całość. Bryła ma nawiązywać do uproszczonej formy naturalnego kamienia, dlatego też krawędzie stolików prowadzone są po delikatnym łuku, a wykorzystane przeze mnie drewno jesionowe oraz malowane na czarny mat stalowe nogi nawiązują do kontrastujących sobie cech domu jakimi są surowość, miękkość, delikatność."
+          : "The coffee table I designed was created with the idea of incorporating it into a selected living space. It is a living room in a 17th century Catalan house in Spain. The whole object is made of natural stone with different textures. The design assumption for the table was primarily form and function. Because of the cubature of the chosen room I've decided to design two tables, which after joining together create a common whole. The shape is supposed to refer to the simplified form of natural stone, that's why the edges of the tables are led in a delicate arc, and the ash wood and matte black painted steel legs I used refer to the contrasting features of the house which are rawness, softness and delicacy."}
+      </p>
     </div>
   );
 }

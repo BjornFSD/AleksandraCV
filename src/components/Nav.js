@@ -24,7 +24,7 @@ function Nav({ language, setlanguage, swap, PL, ENG }) {
             });
           }}
         >
-          {language ? "Home" : "Home"}
+          {language ? "Strona Główna" : "Home"}
         </li>
         <li
           className="nav_ul-li"

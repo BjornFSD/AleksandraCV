@@ -57,7 +57,7 @@ function Nav({ language, setlanguage, swap, PL, ENG }) {
             });
           }}
         >
-          {language ? "Projekty" : "Projects"}
+          {language ? "Moje Projekty" : "My Projects"}
         </li>
         <li
           className="nav_ul-li"
